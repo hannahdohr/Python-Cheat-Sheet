@@ -1,0 +1,66 @@
+<DOCTYPE html>
+<head>
+    <title>Berechnung Trigonometrie</title>
+</head>
+
+<style>
+body {
+        background-color: rgb(225, 225, 225);
+} 
+.p1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:30px;
+}
+</style>
+
+<body>
+<div>
+<h1 class="p1">Trigonometrie</h1>
+
+<p class="p1">Um mit trigonometrischen Funktionen rechnen zu können, gibt es mehrere Möglichkeiten.</p>
+<br>
+<h3 class="p1">Möglichkeit 1</h3>
+<p class="p1"><b>Ein Seitenverhältnis berechnen</b></p>
+<p class="p1">Um ein Seitenverhältnis berechnen zu können, muss nur ein Winkel angegeben werden.</p>
+<hr>
+<h3 class="p1">Möglichkeit 2</h3>
+<p class="p1"><b>Einen Winkel berechnen</b></p>
+<p class="p1">Um einen Winkel berechnen zu können müssen zwei Seiten angegeben werden.</p>
+<p class="p1">In PyCharm funktioniert das ganze, indem man zuerst zwei Variablen jeweils eine Zahl oder eine Eingabe zuweißt.
+  <br>Danach weißt man einer weiteren Variable die Umkehrfunktion von Sinus, Kosinus oder Tangens zu. Dahinter kommen dann in Klammern die beiden oben zugewiesenen Variablen (die beiden Seitenlängen).
+  <br> Da PyCharm automatisch in der Einheit rad (Bogenmaß) rechnet, muss man ihm dann noch sagen, dass das Ergenis in Grad angegeben werden soll.
+</p>
+
+<div style="display: flex; align-items:
+ start;">
+ <img style="width: 470px; height: 613px; margin-right: 10px"
+ src="Berechnung Trigonometrie code.png" />
+ <img style="width: 525px; height: 457px; margin-right: 10px"
+ src="berechnung trigonometrie fenster1.png" />
+ <img style="width: 526px; height: 454px; margin-right: 10px"
+ src="berechnung trigonometrie fenster2.png" />
+</div>
+
+
+<br>
+<p class="p1">In diesem Beispiel funktioniert die Berechnung so, dass in dem Fenster zwei Textfelder sind in denen die Seitenlängen angegeben werden können.
+  <br> Zusätzlich gibt es einen Button dem die Funktion des berechnens zugewiesen ist. Ganz oben ist diese Funktion dann definiert.
+  <br> Zuerst werden den Variablen "gk" und "hy" (Abkürzung für Gegenkathete und Hypothenuse) die Werte zugewiesen. "Float" steht in dem Fall für ganze Zahl und die get Funktion sagt das er sich die Werte aus den beiden Textfeldern nimmt.
+  <br> Danach wird der Variablen "ergebnis" die Berechnung zugewiesen. In diesem Fall wird mit Sinus gerechnet, das heißt die Berechnung lautet "math.asin". "asin" steht für Arcus Sinus, die Umkehrfunktion von Sinus.
+  <br> Hinter der mathematischen Funktion stehen dann die beiden Variablen der Seitenlängen in Klammern, da sie zuerst geteilt werden müssen und dann in die Rechnung mit einbezogen werden.
+  <br> Theoretisch wäre man an der Stelle schon fertig, aber da wir in diesem Fall den Winkel in Grad wollen und nicht das Bogenmaß, wird das Ergebnis noch in die Einheit Grad umgewandelt.
+  <br> Als letztens wird das Ergenis in diesem Beispiel noch in ein Label gepackt damit es auf dem Hauptfenster zu sehen ist. 
+</p>
+
+<hr>
+
+<h3 class="p1">Möglichkeit 3</h3>
+<p class="p1"><b>Eine Seitenlänge berechnen</b></p>
+
+</div>
+
+</body>

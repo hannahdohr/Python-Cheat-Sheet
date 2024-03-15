@@ -1,0 +1,106 @@
+<DOCTYPE html>
+<html>
+
+<head>
+    <title>Cheat Sheet menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<style>
+body {
+    background-color: rgb(180, 178, 178);
+}
+.p1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.solid {
+    background-color:rgb(225, 225, 225);
+    border-style: solid;
+    border-width: 1px;
+    width: 160px;
+    border-radius: 5px;
+    padding: 8px; 
+    border-color:rgb(225, 225, 225)
+}
+div {
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:30px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover > p, a:focus > p, a:active > p {
+    background-color:darkgray
+}
+label {
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    display: none;
+}
+.submenu {
+    display: none;
+}
+#checkbox1:checked + #submenu1 {
+    display: block;
+}
+#checkbox2:checked + #submenu2 {
+    display: block;
+}
+#checkbox3:checked + #submenu3 {
+    display: block;
+}
+#checkbox4:checked + #submenu4 {
+    display: block;
+}
+</style>
+
+<body>
+<div>
+<a target="Inhalt" href="Inhalt%20Startseite.html"><i class="material-icons" style="font-size:40px; color:rgb(0, 0, 0)">house</i></a>
+<br>
+<br>
+
+<label class="p1 solid" for="checkbox1">Allgemeines</label>
+<input type="checkbox" id="checkbox1" />
+<ul class="submenu" id="submenu1">
+    <a target="Inhalt" href="Inhalt%20Python.html"><p class="p1 solid">Python</p></a>
+    <a target="Inhalt" href="Inhalt%20Arbeiten%20in%20PyCharm.html"><p class="p1 solid" >Arbeiten in PyCharm</p></a>
+</ul>
+<br>
+<br>
+<br>
+
+<label class="p1 solid" for="checkbox2">Oberfläche</label>
+<input type="checkbox" id="checkbox2" />
+<ul class="submenu" id="submenu2">
+    <a target="Inhalt" href="Inhalt%20Hauptfenster.html"><p class="p1 solid" >Hauptfenster</p></a>
+    <a target="Inhalt" href="Inhalt%20Label.html"><p class="p1 solid" >Label</p></a>
+    <a target="Inhalt" href="Inhalt%20Button.html"><p class="p1 solid" >Button</p></a>
+    <a target="Inhalt" href="Inhalt%20Textfeld.html"><p class="p1 solid" >Textfeld</p></a>
+</ul>
+<br>
+<br>
+<br>
+
+<label class="p1 solid" for="checkbox3">Berechnung</label>
+<input type="checkbox" id="checkbox3" />
+<ul class="submenu" id="submenu3">
+    <a target="Inhalt" href="Berechnung%20Trigonometrie.html"><p class="p1 solid">Trigonometrie</p></a>
+</ul>   
+<br>
+<br>
+<br>
+
+<label class="p1 solid" for="checkbox4">Beispiele</label>
+<input type="checkbox" id="checkbox4" />
+<ul class="submenu" id="submenu4">   
+    <a target="Inhalt" href="Beispiel%20trigonometrie.html"><p class="p1 solid">Berechnung Trigonometrie</p></a>
+</ul>
+</div>
+
+</body>
+</html>
